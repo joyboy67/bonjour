@@ -7,7 +7,7 @@
 #include <sys/sockey.h>
 #include <netinet/in.h>
 
-int socket(int, int *, struct sockaddr_in *);
+int cr_socket(int, int *, struct sockaddr_in *);
 void client_service(int, int, char **);
 struct sockaddr_in adresse_serveur, adresse_client;
 
@@ -22,7 +22,9 @@ struct sockaddr_in adresse_serveur, adresse_client;
     if (hp  = gethostbyname(argv[1] == NULL) { fprint(stderr, "machise %s inconnue", argv[1]); exit(2); }
         
     port = 0;
-    
+        
+    if ((socket_client = new_socket(SOCK_STREAM, &port, &adresse_client)) == -1) { fprint(stderr, "Création du socket client impossible\n"); exit(2); }
 
+    printf("Client sur le port %d\n", ntohs(adresse_client.sin_port));
 
   }
