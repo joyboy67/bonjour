@@ -18,12 +18,12 @@ struct sockaddr_in adresse_serveur, adresse_client;
     int socket_client;
     struct hostent *hp;
     
-    if (argc < 3) { fprintf(stderr, "erreur sur le nombre de paramètres\n"); exit(2); }
-    if (hp  = gethostbyname(argv[1] == NULL) { fprint(stderr, "machise %s inconnue", argv[1]); exit(2); }
+    if (argc < 3) { fputs(stderr, "erreur sur le nombre de paramètres\n"); exit(2); }
+    if (hp  = gethostbyname(argv[1] == NULL) { fprintf(stderr, "machise %s inconnue", argv[1]); exit(2); }
         
     port = 0;
         
-    if ((socket_client = new_socket(SOCK_STREAM, &port, &adresse_client)) == -1) { fprint(stderr, "Création du socket client impossible\n"); exit(2); }
+    if ((socket_client = new_socket(SOCK_STREAM, &port, &adresse_client)) == -1) { fputs(stderr, "Création du socket client impossible\n"); exit(2); }
 
     printf("Client sur le port %d\n", ntohs(adresse_client.sin_port));
         
