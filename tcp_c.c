@@ -12,7 +12,7 @@ void client_service(int, int, char **);
 struct sockaddr_in adresse_serveur, adresse_client;
 
 
-  main(int argc, *argv[]) {
+  int main(int argc, *argv[]) {
     
     int port;
     int socket_client;
@@ -26,5 +26,7 @@ struct sockaddr_in adresse_serveur, adresse_client;
     if ((socket_client = new_socket(SOCK_STREAM, &port, &adresse_client)) == -1) { fprint(stderr, "Création du socket client impossible\n"); exit(2); }
 
     printf("Client sur le port %d\n", ntohs(adresse_client.sin_port));
+        
+    return 0;
 
   }
