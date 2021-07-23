@@ -1,8 +1,7 @@
-#include <stdlib.h>
+#include <stdio.h>
 
-int main(int argc, char *argv[])
+int main()
 {
-    printf("Bonjour !")
-
-    return 0;
+        puts("Bonjour !")
+        return 0;
 }
