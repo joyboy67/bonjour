@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#incude <stdbool.h>
+#include <stdbool.h>
 #define uint unsigned int 
 
 typedef struct Etat Etat
