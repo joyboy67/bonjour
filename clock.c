@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <time.h>
+int i;
 
 int main() {
 
     clock_t start = clock();
-    
-    int i;
+
     for(i=0; i<1000000000; i++) {
     
     }
