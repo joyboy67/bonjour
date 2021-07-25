@@ -19,7 +19,7 @@ struct sockaddr_in adresse_serveur, adresse_client;
     struct hostent *hp;
     
     if (argc < 3) { fputs(stderr, "erreur sur le nombre de paramètres\n"); exit(2); }
-    if (hp  = gethostbyname(argv[1] == NULL) { fprintf(stderr, "machise %s inconnue", argv[1]); exit(2); }
+    if (hp  = gethostbyname(argv[1] == NULL) { fprintf(stderr, "machine %s inconnue", argv[1]); exit(2); }
         
     port = 0;
         
