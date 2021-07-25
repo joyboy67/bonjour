@@ -22,5 +22,5 @@ void insertion() {
 };
 
 void suppression() {
-
+	if (liste == NULL) { exit(EXIT_FAILURE) };
 };
