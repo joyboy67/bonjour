@@ -13,7 +13,6 @@ struct Etat {
 struct Arc {
 };
 
-
 struct AFD {
 };
 
