@@ -3,9 +3,9 @@
 #include <stdbool.h>
 #define uint unsigned int 
 
-typedef struct Etat Etat
-typedef struct Arc Arc
-typedef struct AFD AFD
+typedef struct Etat Etat;
+typedef struct Arc Arc;
+typedef struct AFD AFD;
 
 struct Etat {
 };
