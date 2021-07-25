@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-int i;
+unsigned int i;
 
 int main() {
 
