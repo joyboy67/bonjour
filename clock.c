@@ -12,7 +12,7 @@ int main() {
     
     clock_t end = clock();
   
-    unsigned long secs = (end -  start) / CLOCKS_PER_SEC;
+    unsigned long secs = (end - start) / CLOCKS_PER_SEC;
     printf("Terminé en %ld ms\n", secs * 1000);  
         
     return 0;
