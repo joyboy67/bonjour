@@ -3,23 +3,19 @@
 #include <stdbool.h>
 #define uint unsigned int 
 
-typedef struct Etat Etat;
-typedef struct Arc Arc;
-typedef struct AFD AFD;
+typedef struct Etat {
+} Etat;
 
-struct Etat {
-};
+typedef struct Arc {
+} Arc;
 
-struct Arc {
-};
-
-struct AFD {
-};
+stypedef truct AFD {
+} AFD;
 
 
   int main (uint argc, char **argv) {
   
-    puts("------- AFD Start ---------");
+    puts("------- Démarrage AFD ---------");
     return 0;
   
   };
