@@ -17,7 +17,7 @@ struct AFD {
 };
 
 
-  int main (uint argc, char *argv[]) {
+  int main (uint argc, char **argv) {
   
     puts("------- AFD Start ---------");
     return 0;
