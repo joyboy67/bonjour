@@ -1,6 +1,6 @@
 require 'gosu'
 
-tick = 0
+$tick = 0
 
 # Gosu 
 
@@ -15,8 +15,17 @@ end
 
 #
 
-class Wireworld
+class Cellule
+	def initialize(x, y, etat)
+	   @x = x
+	   @y = y
+	   @etat = etat
+	end
+end
 
+class Wireworld
+	
+include Cellule
 @@Etat = {
 	tete: ">",
 	queue: "-",
@@ -26,15 +35,18 @@ class Wireworld
 
 @@Regles = def regles(tete)
 
-	while(tick)
+	while($tick)
+	    $tick += 1
 	end
 
 end
 	
    def initialize(config)
       puts "Bienvenu sur Wireworld!"
-      @etat = @@Etat
       @config = config
+	   @config.each |c| do
+	   end
+      @@Regles(tete)	   
    end
 
 end
