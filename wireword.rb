@@ -42,7 +42,7 @@ include Cellule
 end
 	
    def initialize(config)
-      puts "Bienvenu sur Wireworld!"
+      puts "Bienvenue sur Wireworld!"
       @config = config
 	  @config.each |c| do
 	   case c.etat
