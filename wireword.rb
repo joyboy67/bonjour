@@ -1,5 +1,7 @@
 require 'gosu'
 
+tick = 0
+
 # Gosu 
 
 class GameWindow < Gosu::Window
@@ -22,15 +24,17 @@ class Wireworld
 	conduteur: "x"
 }.frozen
 
-@@Regles = def 
+@@Regles = def regles(tete)
 
+	while(tick)
+	end
 
 end
 	
    def initialize(config)
       puts "Bienvenu sur Wireworld!"
       @etat = @@Etat
-      @onfig = config
+      @config = config
    end
 
 end
