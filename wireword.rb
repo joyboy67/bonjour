@@ -51,4 +51,5 @@ end
 
 end
 
-Wireworld.new
+GameWindow.new
+Wireworld.new(config)
