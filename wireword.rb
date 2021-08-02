@@ -44,8 +44,13 @@ end
    def initialize(config)
       puts "Bienvenu sur Wireworld!"
       @config = config
-	   @config.each |c| do
-	   end
+	  @config.each |c| do
+	   case c.etat
+	   	when :tete
+	   	when :queue
+	   	when :vide
+	   	when :conducteur
+	   end	
       @@Regles(tete)	   
    end
 
