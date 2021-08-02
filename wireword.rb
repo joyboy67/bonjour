@@ -22,8 +22,15 @@ class Wireworld
 	conduteur: "x"
 }.frozen
 
-   def initialize
+@@Regles = def 
+
+
+end
+	
+   def initialize(config)
       puts "Bienvenu sur Wireworld!"
+      @etat = @@Etat
+      @onfig = config
    end
 
 end
