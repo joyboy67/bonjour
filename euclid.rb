@@ -6,3 +6,7 @@ def euclide_div(x,y)
     [x / y, x % y]
   end
 end
+
+def factoriel(n)
+  n.is_a? Integer ? Math.gamma(n + 1) : raise "Veuilez entrer un nombre entier"
+end
