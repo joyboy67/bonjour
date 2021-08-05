@@ -10,7 +10,11 @@ end
 # factoriel benchmark
 
 def factoriel(n)
-  (n.is_a? Integer) && (n >= 0) ? Math.gamma(n + 1) : raise "Veuilez entrer un nombre entier positif"
+  if (n.is_a? Integer) && (n >= 0)
+    Math.gamma(n + 1) 
+  else
+    raise "Veuilez entrer un nombre entier positif"
+  end
 end
 
 def factoriel_1(n)
