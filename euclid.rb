@@ -22,11 +22,9 @@ def factoriel_2(n)
   return 1 if n == 0
   
   r = 1
-  
   while n > 0
     r = r * n  
     n -= 1
   end
-  
   return r
 end
