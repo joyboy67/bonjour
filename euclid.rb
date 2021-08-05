@@ -32,3 +32,5 @@ def factoriel_2(n)
   end
   return r
 end
+
+fibo = lambda { |x| x < 2 ? x : fibo.call(x-1) + fibo.call(x-2) }
