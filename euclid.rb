@@ -11,7 +11,7 @@ end
 
 def factoriel(n)
   if (n.is_a? Integer) && (n >= 0)
-    Math.gamma(n + 1) 
+    Math.gamma(n + 1).to_i
   else
     raise "Veuilez entrer un nombre entier positif"
   end
